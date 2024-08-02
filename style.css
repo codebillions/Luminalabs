@@ -1,0 +1,1877 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ 
+/* color ode =>  #d94a2c #ff8b73*/
+
+@font-face {
+
+    font-family: 'bold';
+    src: url("font/Poppins-Bold.ttf");
+}
+
+@font-face {
+
+    font-family: 'medium';
+    src: url("font/Poppins-Medium.ttf") format('truetype');
+}
+
+@font-face {
+
+    font-family: 'normal';
+    src: url("font/Poppins-Light.ttf") format('truetype');
+}
+
+
+
+
+a:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+
+
+body {
+    background: rgb(236, 236, 236);
+    /* overflow: hidden !important; */
+}
+
+button {
+    color: #ffffff !important;
+    box-shadow: none !important;
+    /* background: #688ef6 !important; */
+}
+
+
+a {
+    font-family: 'normal', sans-serif;
+    font-weight: normal;
+}
+
+
+h1,
+h2 {
+    font-family: 'bold', sans-serif;
+    color: white !important;
+    font-weight: bold;
+}
+
+h3,h4 {
+    font-family: 'medium', sans-serif;
+    color: #d94a2c !important;
+}
+
+p {
+    font-family: 'normal', sans-serif;
+    font-weight: normal;
+    color: black !important;
+}
+
+
+
+/* NAVBAR STYLING */
+
+nav {
+    background: #292929;
+    backdrop-filter: blu(10px);
+    -webkit-backdrop-filter: blur(50px);
+    border: none;
+    border-radius: 30px;
+}
+
+
+nav .navbar-brand img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+nav button img {
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(275deg);
+    width: 30px;
+}
+
+nav .btn-close {
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+}
+
+nav .btn-close:focus {
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+}
+
+nav .offcanvas {
+    background: #181818;
+    transition: 0.5s;
+    width: 50%;
+    padding: 0 50PX 0 50px;
+}
+
+nav .offcanvas .offcanvas-body .navbar-nav {
+    display: flex !important;
+}
+
+nav .offcanvas h5 {
+    margin-left: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+nav .offcanvas h5 img {
+    width: 150px;
+}
+
+nav .offcanvas ul li {
+    margin-left: 20px;
+    display: flex;
+}
+
+nav .offcanvas ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'medium', sans-serif;
+    margin-right: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+nav .offcanvas ul li a:focus {
+    color: white;
+}
+
+nav .offcanvas ul li a:hover {
+    color: white !important;
+    background: linear-gradient(90deg, #d94a2c, #ff8b73);
+    padding: 10px 0 10px 35px;
+}
+
+nav .offcanvas .icons img{
+    width: 30px;
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+    margin: 30px 0 0 20px;
+}
+
+
+
+
+/* ------------------------index-section-1--------------------------- */
+.index-sec-1{
+    width: 100%;
+    height: fit-content;
+    background-image: url("image/bgds.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.index-sec-1 .index-sec-1-container{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text h1{
+    font-size: 150px;
+    margin-top: 100px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text p{
+    font-size: 16px;
+    margin-top: -20px !important;
+    margin-left: 10px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button{
+    background: #d94a2c;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-image img{
+    width: 70%;
+    margin-top: 60px;
+}
+
+
+
+/* ---------------------------------cards---------------------------- */
+.card-sec{
+    width: 100%;
+    height: fit-content;
+    background: rgb(236, 236, 236);
+}
+
+.card-sec .card-sec-container p img{
+    width: 60px;
+}
+
+.card-sec .card-sec-container h3{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.card-sec .card-sec-container{
+    padding: 50px 20px 10px 20px;
+}
+
+.card-sec .card-sec-container .card{
+    width: 48%;
+    margin-left: 18px;
+    padding: 50px;
+    box-shadow: 0px -25px 20px -20px rgba(241, 241, 241, 0.45), 25px 0 20px -20px rgba(241, 241, 241, 0.45), 0px 25px 20px -20px rgba(241, 241, 241, 0.45), -25px 0 20px -20px rgba(241, 241, 241, 0.45);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-sec .card-sec-container .card h3{
+    font-size: 30px;
+    font-family: 'bold', sans-serif;
+}
+
+.card-sec .card-sec-container .card-sec-box-3, .card-sec-box-4, .card-sec-box-5{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container .colored{
+    background: linear-gradient(-250deg, #292929, #ff8b73);
+}
+
+.card-sec .card-sec-container p .button{
+    background: #d94a2c;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    margin-top: 30px;
+}
+
+.card-sec .card-sec-container p .button:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+
+
+/* -------------------------------team section---------------------------------- */
+.team-sec{
+    width: 100%;
+    height: fit-content;
+    background: rgb(236, 236, 236);
+}
+
+.team-sec .team-sec-container{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team-sec .team-sec-container .head-img img{
+    width: 60px;
+}
+
+.team-sec .team-sec-container h3{
+   font-size: 35px;
+   margin-bottom: 30px;
+}
+
+.team-sec .team-sec-container .team-sec-box{
+    background: white;    
+    width: 23%;
+    margin-left: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px -25px 20px -20px rgba(241, 241, 241, 0.45), 25px 0 20px -20px rgba(241, 241, 241, 0.45), 0px 25px 20px -20px rgba(241, 241, 241, 0.45), -25px 0 20px -20px rgba(241, 241, 241, 0.45);
+
+}
+
+.team-sec .team-sec-container .first-box{
+    margin-left: 13%;
+}
+
+
+.team-sec .team-sec-container .team-sec-box .team-img{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img img{
+    width: 95%;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 50%;
+}
+
+.team-sec .team-sec-container .team-sec-box h4{
+    font-family: 'bold', sans-serif !important;
+    margin-top: 20px;
+}
+
+.team-sec .team-sec-container .team-sec-box .link img{
+    width: 30px;
+}
+
+
+
+/* ----------------------------------------analytics-section-style---------------------------------------- */
+.analytics-sec{
+    width: 100%;
+    height: fit-content;
+    background: white;
+}
+
+.analytics-sec .analytics-sec-cont{
+    padding: 60px 50px 70px 50px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-img{
+    width: 35%;
+    height: fit-content;
+    padding: 20px 20px 0 20px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px -25px 20px -20px rgba(228, 228, 228, 0.45), 25px 0 20px -20px rgba(197, 197, 197, 0.45), 0px 25px 20px -20px rgba(197, 197, 197, 0.45), -25px 0 20px -20px rgba(197, 197, 197, 0.45);
+
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text{
+    margin-left: 70px;
+}
+
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text h4{
+    color: black !important;
+    font-size: 55px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text p{
+    font-size: 20px;
+}
+
+
+/* ---------------------------------- footer---------------------------------------- */
+
+footer{
+    width: 100%;
+    height: fit-content;
+    background: black;
+    padding-bottom: 0 !important;
+}
+
+footer .footer-cont{
+   background-image: url("image/bgds.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 80%;
+    margin-left: 10%;
+    margin-top: -5%;
+    padding: 20px 10px 10px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer .footer-cont p{
+    margin-top: 15px;
+}
+
+footer .footer-cont p a{
+     background: #d94a2c;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    margin-top: 10px;
+}
+
+footer .footer-cont p a:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+footer .links a{
+    color: white;
+    margin-top: 30px;
+}
+
+footer .links a:hover{
+    outline: none !important;
+    box-shadow: none !important;
+    color: #d94a2c !important;
+}
+
+footer .copyright{
+    color: #5c5b5b !important;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+
+
+
+/* ---------------------------------------------------- aboutt page -------------------------------------------------------------- */
+.about-sec{
+    width: 100%;
+    height: fit-content;
+    background-image: url("image/bgds.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sec .about-sec-cont {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about-sec .about-sec-cont .about-sec-box h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+.about-sec .about-sec-cont .about-sec-box p{
+    font-size: 20px;
+    margin-top: 30px;
+    color:  white !important;
+    padding: 0 15% 0 15%;
+}
+
+.about-sec .about-sec-cont .about-sec-box p .button{
+    font-size: 15px;
+    margin-top: 20px;
+    color:  white !important;
+    background: #d94a2c;
+    padding: 10px 35px 10px 35px;
+}
+
+/* ---------------------------------------- about text section ------------------------------ */
+.text-sec{
+    width: 100%;
+    height: fit-content;
+    background: rgb(236, 236, 236);
+}
+
+.text-sec .text-sec-cont{
+    padding-top: 40px;
+    /* padding-bottom: 20px; */
+}
+
+.text-sec .text-sec-cont .text-sec-box h3{
+    font-family: 'bold', sans-serif;
+    font-size: 35px;
+}
+
+.text-sec .text-sec-cont .text-sec-box p{
+    font-size: 18px;
+    padding-right: 25%;
+}
+
+/* --------------------------------------------------  mission & vision ------------------------- */
+.mission .mission-cont{
+ padding-top: 30px !important;
+ padding-bottom: 100px !important;
+}
+
+.mission .mission-cont .main-text{
+    margin-top: 0 !important;
+}
+
+
+
+
+
+/* -------------------------------------------------- product and service page --------------------------------------- */
+
+.services .services-cont{
+    padding-top: 110px !important;
+    padding-bottom: 100px !important;
+}
+
+
+
+/* -------------------------------------------------- contact page -------------------------------- */
+
+.contact-sec{
+    width: 100%;
+    height: fit-content;
+}
+
+.contact-sec .contact-sec-cont{
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box{
+    background: white;
+    margin-top: 25px;
+    padding: 20px 40px 20px 40px;
+    width: 45%;
+    margin-left: 45px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px -25px 20px -20px rgba(241, 241, 241, 0.45), 25px 0 20px -20px rgba(241, 241, 241, 0.45), 0px 25px 20px -20px rgba(241, 241, 241, 0.45), -25px 0 20px -20px rgba(241, 241, 241, 0.45);
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link{
+    margin-top:50px;
+     font-size: 15px;
+    color:  white !important;
+    background: #d94a2c;
+    padding: 10px 35px 10px 35px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link img{
+    width: 20px;
+    filter: invert(1) sepia(1) saturate(0) hue-rotate(275deg);
+
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .button{
+    font-size: 15px;
+    margin-top: 20px;
+    color:  white !important;
+    background: #d94a2c;
+    padding: 10px 35px 10px 35px;
+}
+
+
+
+
+
+
+/* ------------------------------ responsive views -----------------------*/
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    nav .offcanvas {
+        padding: 0 20PX 0 20px;
+    }
+
+    nav .offcanvas ul li a {
+        font-size: 16px;
+    }
+
+    nav .offcanvas .icons img{
+        width: 25px;
+        margin: 30px 0 0 10px;
+    }
+
+
+/* ------------------------index-section-1--------------------------- */
+.index-sec-1{
+    width: 100%;
+    height: fit-content;
+    background-image: url("image/bgds.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.index-sec-1 .index-sec-1-container{
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text p{
+    font-size: 12px;
+    margin-top: -10px !important;
+    margin-left: 5px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button{
+    background: #d94a2c;
+    color: white;
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+
+.index-sec-1 .index-sec-1-container .index-sec-1-image img{
+    width: 90%;
+    margin-top: 100px;
+}
+
+
+
+
+/* ---------------------------------cards---------------------------- */
+
+.card-sec .card-sec-container p img{
+    width: 60px;
+}
+
+.card-sec .card-sec-container h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-sec .card-sec-container{
+    padding: 50px 20px 10px 20px;
+}
+
+.card-sec .card-sec-container .card{
+    width: 46%;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.card-sec .card-sec-container .card h3{
+    font-size: 23px;
+}
+
+.card-sec .card-sec-container .card p{
+    font-size: 14px;
+}
+
+.card-sec .card-sec-container .colored{
+    background: linear-gradient(-250deg, #292929, #ff8b73);
+}
+
+.card-sec .card-sec-container p .button{
+    background: #d94a2c;
+    color: white;
+    padding: 10px 35px 10px 35px;
+    margin-top: 30px;
+}
+
+
+
+/* -------------------------------team section---------------------------------- */
+
+.team-sec .team-sec-container{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team-sec .team-sec-container .head-img img{
+    width: 60px;
+}
+
+.team-sec .team-sec-container h3{
+   font-size: 22px;
+   margin-bottom: 30px;
+}
+
+.team-sec .team-sec-container .team-sec-box{  
+    width: 23%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team-sec .team-sec-container .first-box{  
+    margin-left: 13%;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img img{
+    width: 95%;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 50%;
+}
+
+.team-sec .team-sec-container .team-sec-box h4{
+    font-size: 18px;
+}
+
+.team-sec .team-sec-container .team-sec-box p{
+    font-size: 14px;
+}
+
+.team-sec .team-sec-container .team-sec-box .link img{
+    width: 20px;
+}
+
+
+
+/* ----------------------------------------analytics-section-style---------------------------------------- */
+
+.analytics-sec .analytics-sec-cont{
+    padding: 60px 30px 50px 30px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-img{
+    width: 40%;
+    padding: 10px 10px 0 10px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text{
+    margin-left: 50px;
+}
+
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text h4{
+    color: black !important;
+    font-size: 30px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text p{
+    font-size: 15px;
+}
+
+
+
+/* ---------------------------------- footer---------------------------------------- */
+
+footer .footer-cont{
+   width: 95%;
+    margin-left: 20px;
+    margin-top: -8%;
+    padding: 25px 15px 10px 15px;
+}
+
+footer .footer-cont p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer .footer-cont p a{
+    font-size: 14px;
+}
+
+footer .links a{
+    font-size: 14px;
+}
+
+
+
+
+/* ---------------------------------------------------- aboutt page -------------------------------------------------------------- */
+
+.about-sec .about-sec-cont {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about-sec .about-sec-cont .about-sec-box h1{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.about-sec .about-sec-cont .about-sec-box p{
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 8% 0 8%;
+}
+
+.about-sec .about-sec-cont .about-sec-box p .button{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------- about text section ------------------------------ */
+
+.text-sec .text-sec-cont{
+    padding-top: 40px;
+}
+
+.text-sec .text-sec-cont .text-sec-box h3{
+    font-size: 35px;
+}
+
+.text-sec .text-sec-cont .text-sec-box p{
+    font-size: 15px;
+    padding-right: 12%;
+}
+
+
+
+
+
+/* -------------------------------------------------- contact page -------------------------------- */
+
+.contact-sec .contact-sec-cont{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box{
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+    width: 47%;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box h4{
+    font-size: 20px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box p{
+    font-size: 14px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link{
+    margin-top: 20px;
+    font-size: 15px;
+    font-size: 12px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link img{
+    width: 15px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .button{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+}
+
+
+
+
+
+
+
+/* for large mobile view  */
+@media only screen and (min-width: 500px) and (max-width: 767px) and (orientation: portrait) {
+
+    nav .navbar-brand img {
+        width: 100px;
+    }
+
+    nav .offcanvas {
+        padding: 0 15PX 0 15px;
+        width: 65%;
+    }
+
+    nav .offcanvas .offcanvas-body .navbar-nav {
+        display: flex !important;
+    }
+
+    nav .offcanvas h5 img {
+        width: 100px;
+    }
+
+    nav .offcanvas ul li a {
+        font-size: 15px;
+        margin-right: 11px;
+        width: 100%;
+    }
+
+    nav .offcanvas ul li a:hover {
+        color: white !important;
+        padding: 10px 0 10px 30px;
+    }
+
+
+    nav .offcanvas .icons img{
+    width: 25px;
+    margin: 30px 0 0 20px;
+    }
+
+
+
+    /* ------------------------index-section-1--------------------------- */
+.index-sec-1{
+    background-image: url("image/bgmb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.index-sec-1 .index-sec-1-container{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text p{
+    font-size: 14px;
+    margin-top: -12px !important;
+    margin-left: 3px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button{
+    background: #d94a2c;
+    color: white;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-image img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+
+
+/* ---------------------------------cards---------------------------- */
+
+.card-sec .card-sec-container p img{
+    width: 50px;
+}
+
+.card-sec .card-sec-container h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.card-sec .card-sec-container{
+    padding: 50px 20px 20px 20px;
+}
+
+.card-sec .card-sec-container .card{
+    width: 100%;
+    margin-left: 0;
+    padding: 40px;
+}
+
+.card-sec .card-sec-container .card-sec-box-2{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container .card-sec-box-3{
+    background: linear-gradient(-250deg, #292929, #ff8b73);
+}
+
+.card-sec .card-sec-container .card-sec-box-3 h3{
+   color: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-3 p{
+   color: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4{
+    background: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4 h3{
+   color: #d94a2c !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4 p{
+   color: black !important;
+}
+
+.card-sec .card-sec-container .card h3{
+    font-size: 25px;
+    font-family: 'bold', sans-serif;
+}
+
+.card-sec .card-sec-container .card p{
+    font-size: 14px;
+}
+
+.card-sec .card-sec-container .card-sec-box-3, .card-sec-box-4{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container p .button{
+   font-size: 14px;
+}
+
+
+
+/* -------------------------------team section---------------------------------- */
+
+.team-sec .team-sec-container{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team-sec .team-sec-container .head-img img{
+    width: 50px;
+}
+
+.team-sec .team-sec-container h3{
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.team-sec .team-sec-container .team-sec-box{
+    width: 45%;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding:20px 15px 15px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.team-sec .team-sec-container .third-box{
+    margin-left: 25% !important;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.team-sec .team-sec-container .team-sec-box h4{
+    font-size: 18px;
+}
+
+.team-sec .team-sec-container .team-sec-box p{
+    font-size: 14px !important;
+}
+
+.team-sec .team-sec-container .team-sec-box .link img{
+    width: 20px;
+}
+
+
+
+/* ----------------------------------------analytics-section-style---------------------------------------- */
+
+.analytics-sec .analytics-sec-cont{
+    padding: 60px 20px 50px 20px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-img{
+    width: 75%;
+    padding: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text{
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text h4{
+    color: black !important;
+    font-size: 35px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text p{
+    font-size: 15px;
+}
+
+
+
+/* ---------------------------------- footer---------------------------------------- */
+
+footer .footer-cont{
+   background-image: url("image/bgmb.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 95%;
+    margin-left: 10px;
+    margin-top: -15%;
+    padding: 20px 15px 10px 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer .footer-cont h1{
+   font-size: 25px;
+}
+
+footer .footer-cont p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+footer .footer-cont p a{
+    font-size: 12px;
+}
+
+
+footer .links a{
+    color: white;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+
+
+/* ---------------------------------------------------- aboutt page -------------------------------------------------------------- */
+.about-sec{
+    background-image: url("image/bgmb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sec .about-sec-cont {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about-sec .about-sec-cont .about-sec-box h1{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.about-sec .about-sec-cont .about-sec-box p{
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 10% 0 10%;
+}
+
+.about-sec .about-sec-cont .about-sec-box p .button{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------- about text section ------------------------------ */
+
+.text-sec .text-sec-cont{
+    padding-top: 40px;
+}
+
+.text-sec .text-sec-cont .text-sec-box h3{
+    font-size: 35px;
+}
+
+.text-sec .text-sec-cont .text-sec-box p{
+    font-size: 14px;
+    padding-right: 1%;
+}
+
+
+
+/* -------------------------------------------------- contact page -------------------------------- */
+
+.contact-sec .contact-sec-cont{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box{
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+    width: 90%;
+    margin-left: 27px;
+    border-radius: 10px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box h4{
+    font-size: 20px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box p{
+    font-size: 14px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link{
+    margin-top: 20px;
+    font-size: 15px;
+    font-size: 12px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link img{
+    width: 15px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .button{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+
+}
+
+
+
+
+
+
+/* For Mobile Portrait View */
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) and (orientation: portrait) {
+
+    /* navbar */
+    
+    nav .navbar-brand img {
+        width: 120px;
+    }
+
+    nav .offcanvas {
+        padding: 0 12px 0 12px;
+        width: 70%;
+    }
+
+    nav .offcanvas .offcanvas-body .navbar-nav {
+        display: flex !important;
+    }
+
+    nav .offcanvas h5 img {
+        width: 100px;
+        margin-left: -10px;
+    }
+
+    nav .offcanvas ul li{
+        margin-left: 10px;
+    }
+    
+     nav .offcanvas ul li a {
+        font-size: 14px;
+        margin-right: 11px;
+        width: 100%;
+        font-weight: lighter !important;
+        
+    }
+
+    nav .offcanvas ul li a:hover {
+        color: white !important;
+        background: none;
+        padding: 0;
+    }
+
+    nav .offcanvas .icons img{
+        width: 25px;
+        margin: 30px 0 0 20px;
+    }
+
+
+
+/* ------------------------index-section-1--------------------------- */
+.index-sec-1{
+    background-image: url("image/bgmb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.index-sec-1 .index-sec-1-container{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text h1{
+    font-size: 47px;
+    margin-top: 15px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text p{
+    font-size: 12px;
+    margin-top: -12px !important;
+    margin-left: 3px;
+    padding-right: 50px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button{
+    background: #d94a2c;
+    color: white;
+    font-size: 12px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-image img{
+    width: 80%;
+    margin-top: 30px;
+}
+
+
+/* ---------------------------------cards---------------------------- */
+
+.card-sec .card-sec-container p img{
+    width: 45px;
+}
+
+.card-sec .card-sec-container h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.card-sec .card-sec-container{
+    padding: 50px 20px 20px 20px;
+}
+
+.card-sec .card-sec-container .card{
+    width: 100%;
+    margin-left: 0;
+    padding: 40px;
+}
+
+.card-sec .card-sec-container .card-sec-box-2{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container .card-sec-box-3{
+    background: linear-gradient(-250deg, #292929, #ff8b73);
+}
+
+.card-sec .card-sec-container .card-sec-box-3 h3{
+   color: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-3 p{
+   color: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4{
+    background: white !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4 h3{
+   color: #d94a2c !important;
+}
+
+.card-sec .card-sec-container .card-sec-box-4 p{
+   color: black !important;
+}
+
+.card-sec .card-sec-container .card h3{
+    font-size: 20px;
+    font-family: 'bold', sans-serif;
+}
+
+.card-sec .card-sec-container .card p{
+    font-size: 12px;
+}
+
+.card-sec .card-sec-container .card-sec-box-3, .card-sec-box-4{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container p .button{
+   font-size: 12px;
+}
+
+
+/* -------------------------------team section---------------------------------- */
+
+.team-sec .team-sec-container{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team-sec .team-sec-container .head-img img{
+    width: 45px;
+}
+
+.team-sec .team-sec-container h3{
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.team-sec .team-sec-container .team-sec-box{
+    width: 45%;
+    margin-left: 13px;
+    margin-top: 20px;
+    padding:20px 10px 15px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.team-sec .team-sec-container .third-box{
+    margin-left: 27% !important;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.team-sec .team-sec-container .team-sec-box h4{
+    font-size: 16px;
+}
+
+.team-sec .team-sec-container .team-sec-box p{
+    font-size: 12px !important;
+}
+
+.team-sec .team-sec-container .team-sec-box .link img{
+    width: 20px;
+}
+
+
+/* ----------------------------------------analytics-section-style---------------------------------------- */
+
+.analytics-sec .analytics-sec-cont{
+    padding: 60px 20px 50px 20px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-img{
+    width: 80%;
+    padding: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text{
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text h4{
+    color: black !important;
+    font-size: 30px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text p{
+    font-size: 14px;
+}
+
+
+
+/* ---------------------------------- footer---------------------------------------- */
+
+footer .footer-cont{
+   background-image: url("image/bgmb.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 95%;
+    margin-left: 10px;
+    margin-top: -15%;
+    padding: 20px 15px 10px 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer .footer-cont h1{
+   font-size: 23px;
+}
+
+footer .footer-cont p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+footer .footer-cont p a{
+    font-size: 12px;
+}
+
+
+footer .links a{
+    color: white;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+
+
+/* ---------------------------------------------------- aboutt page -------------------------------------------------------------- */
+.about-sec{
+    background-image: url("image/bgmb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sec .about-sec-cont {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about-sec .about-sec-cont .about-sec-box h1{
+    font-size: 45px;
+    margin-top: 25px;
+}
+
+.about-sec .about-sec-cont .about-sec-box p{
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0 5% 0 5%;
+}
+
+.about-sec .about-sec-cont .about-sec-box p .button{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------- about text section ------------------------------ */
+
+.text-sec .text-sec-cont{
+    padding-top: 40px;
+}
+
+.text-sec .text-sec-cont .text-sec-box h3{
+    font-size: 30px;
+}
+
+.text-sec .text-sec-cont .text-sec-box p{
+    font-size: 14px;
+    padding-right: 10%;
+}
+
+
+
+
+/* -------------------------------------------------- contact page -------------------------------- */
+
+.contact-sec .contact-sec-cont{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box{
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+    width: 90%;
+    margin-left: 23px;
+    border-radius: 10px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box h4{
+    font-size: 20px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box p{
+    font-size: 14px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link{
+    margin-top: 20px;
+    font-size: 15px;
+    font-size: 12px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link img{
+    width: 15px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .button{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+    
+}
+
+
+
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 667px) and (orientation: landscape) {
+
+     nav .navbar-brand img {
+        width: 130px;
+    }
+    
+    /* navbar */
+    nav .offcanvas {
+        padding: 0 15px 0 15px;
+        width: 60%;
+    }
+
+    nav .offcanvas offcanvas-body .navbar-nav {
+        display: flex !important;
+    }
+
+    nav .offcanvas h5 img {
+        width: 100px;
+    }
+
+    nav .offcanvas ul li a {
+        font-size: 14px;
+        margin-right: 11px;
+        width: 100%;
+    }
+
+    nav .offcanvas ul li a:hover {
+        color: white !important;
+        background: none;
+        padding: 0;
+    }
+
+    nav .offcanvas .icons img{
+        width: 25px;
+        margin: 30px 0 0 20px;
+    }
+
+
+
+
+    /* ------------------------index-section-1--------------------------- */
+.index-sec-1{
+    background-image: url("image/bgds.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.index-sec-1 .index-sec-1-container{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text h1{
+    font-size: 85px;
+    margin-top: 0;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text p{
+    font-size: 14px;
+    margin-top: -12px !important;
+    margin-left: 3px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-text .button{
+    background: #d94a2c;
+    color: white;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.index-sec-1 .index-sec-1-container .index-sec-1-image img{
+    width: 50%;
+    margin-top: 0;
+}
+
+
+/* ---------------------------------cards---------------------------- */
+
+.card-sec .card-sec-container p img{
+    width: 45px;
+}
+
+.card-sec .card-sec-container h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.card-sec .card-sec-container{
+    padding: 50px 20px 20px 20px;
+}
+
+.card-sec .card-sec-container .card{
+    width: 45%;
+    margin-left: 20px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.card-sec .card-sec-container .card-sec-box-2{
+    margin-top: 0;
+}
+
+.card-sec .card-sec-container .card h3{
+    font-size: 20px;
+    font-family: 'bold', sans-serif;
+}
+
+.card-sec .card-sec-container .card p{
+    font-size: 12px;
+}
+
+.card-sec .card-sec-container .card-sec-box-3, .card-sec-box-4{
+    margin-top: 20px;
+}
+
+.card-sec .card-sec-container p .button{
+   font-size: 12px;
+}
+
+
+/* -------------------------------team section---------------------------------- */
+
+.team-sec .team-sec-container{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.team-sec .team-sec-container .head-img img{
+    width: 45px;
+}
+
+.team-sec .team-sec-container h3{
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+
+.team-sec .team-sec-container .team-sec-box{
+    width: 30%;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding:20px 10px 15px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.team-sec .team-sec-container .team-sec-box .team-img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.team-sec .team-sec-container .team-sec-box h4{
+    font-size: 18px;
+}
+
+.team-sec .team-sec-container .team-sec-box p{
+    font-size: 12px !important;
+}
+
+.team-sec .team-sec-container .team-sec-box .link img{
+    width: 20px;
+}
+
+
+
+/* ----------------------------------------analytics-section-style---------------------------------------- */
+
+.analytics-sec .analytics-sec-cont{
+    padding: 60px 20px 50px 20px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-img{
+    width: 35%;
+    padding: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text{
+    margin-left: 25px;
+    width: 60%;
+    margin-top: 0;
+}
+
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text h4{
+    color: black !important;
+    font-size: 30px;
+}
+
+.analytics-sec .analytics-sec-cont .analytics-sec-text p{
+    font-size: 14px;
+}
+
+
+
+/* ---------------------------------- footer---------------------------------------- */
+
+footer .footer-cont{
+   background-image: url("image/bgmb.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 95%;
+    margin-left: 10px;
+    margin-top: -8%;
+    padding: 20px 15px 10px 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+footer .footer-cont h1{
+   font-size: 23px;
+}
+
+footer .footer-cont p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+footer .footer-cont p a{
+    font-size: 12px;
+}
+
+
+footer .links a{
+    color: white;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+
+
+/* ---------------------------------------------------- aboutt page -------------------------------------------------------------- */
+.about-sec{
+    background-image: url("image/bgmb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sec .about-sec-cont {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.about-sec .about-sec-cont .about-sec-box h1{
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+.about-sec .about-sec-cont .about-sec-box p{
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 5% 0 5%;
+}
+
+.about-sec .about-sec-cont .about-sec-box p .button{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+
+
+/* ---------------------------------------- about text section ------------------------------ */
+
+.text-sec .text-sec-cont{
+    padding-top: 40px;
+}
+
+.text-sec .text-sec-cont .text-sec-box h3{
+    font-size: 30px;
+}
+
+.text-sec .text-sec-cont .text-sec-box p{
+    font-size: 14px;
+    padding-right: 10%;
+}
+
+
+
+
+/* -------------------------------------------------- contact page -------------------------------- */
+
+.contact-sec .contact-sec-cont{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box{
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+    width: 90%;
+    margin-left: 27px;
+    border-radius: 10px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box h4{
+    font-size: 20px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box p{
+    font-size: 14px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link{
+    margin-top: 20px;
+    font-size: 15px;
+    font-size: 12px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .x-link img{
+    width: 15px;
+}
+
+.contact-sec .contact-sec-cont .contact-sec-box .button{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+  }
